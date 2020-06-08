@@ -27,6 +27,7 @@ $ sudo nomad agent -dev -config=osx-driver-blacklist
 
 **Note:** Please run nomad agent as `sudo` since it uses operating system primitives for resource isolation which require elevated permissions.
 
+---
 
 #### Running A Job
 
@@ -62,6 +63,8 @@ $ nomad alloc status ${ALLOCATIONS_ID}
 ```
 $ nomad alloc logs ${ALLOCATIONS_ID} redis
 ```
+
+---
 
 #### Modifying A Job
 
@@ -115,6 +118,7 @@ $ nomad job run -check-index ${JOB_MODIFY_INDEX} jobs/redis.nomad
 
 **Note:** The update strategy can be configured, but rolling updates makes it easy to upgrade an application at large scale.
 
+---
 
 #### Stopping A Job
 

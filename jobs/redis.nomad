@@ -20,7 +20,7 @@ job "redis" {
     }
 
     group "cache" {
-        count = 1
+        count = 3
 
 
         restart {
@@ -39,7 +39,7 @@ job "redis" {
             driver = "docker"
 
             config {
-                image = "redis:3.2"
+                image = "redis:4.0"
                 port_map {
                 db = 6379
                 }

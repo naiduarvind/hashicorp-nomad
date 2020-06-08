@@ -35,3 +35,8 @@ $ nomad job init
 ```
 $ nomad job run jobs/redis.nomad
 ```
+
+6. Check the status of the job deployed by Nomad.
+```
+$ nomad status job redis
+```
